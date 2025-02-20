@@ -1,0 +1,47 @@
+Tokens:
+Token(IDENTIFIER, var, 1)
+Token(IDENTIFIER, x, 1)
+Token(SYMBOL, =, 1)
+Token(NUMBER, 42, 1)
+Token(SYMBOL, ;, 1)
+Token(IDENTIFIER, var, 2)
+Token(IDENTIFIER, var1, 2)
+Token(SYMBOL, =, 2)
+Token(NUMBER, 10, 2)
+Token(SYMBOL, ;, 2)
+Token(IDENTIFIER, var, 3)
+Token(IDENTIFIER, abc123, 3)
+Token(SYMBOL, =, 3)
+Token(NUMBER, 3.14, 3)
+Token(SYMBOL, ;, 3)
+Token(IDENTIFIER, var, 4)
+Token(IDENTIFIER, , 4)
+Token(SYMBOL, =, 4)
+Token(NUMBER, 5, 4)
+Token(SYMBOL, ;, 4)
+Token(IDENTIFIER, var, 5)
+Token(NUMBER, 1, 5)
+Token(IDENTIFIER, var, 5)
+Token(SYMBOL, =, 5)
+Token(NUMBER, 7, 5)
+Token(SYMBOL, ;, 5)
+Token(IDENTIFIER, var, 6)
+Token(IDENTIFIER, var, 6)
+Token(SYMBOL, @, 6)
+Token(SYMBOL, =, 6)
+Token(NUMBER, 9, 6)
+Token(SYMBOL, ;, 6)
+
+Symbol Table:
+Symbol(x, int, var, 0)
+Symbol(var1, decimal, var, 1)
+Symbol(abc123, int, var, 2)
+null
+Symbol(X, int, var, 3)
+Symbol(1var, int, var, 4)
+Symbol(var@, int, var, 5)
+
+Errors:
+Line 4: Invalid identifier: must start with a lowercase letter
+Line 4: Invalid identifier '' (must start with a lowercase letter and can only contain lowercase letters and digits)
+Line 6: Invalid symbol '@'
